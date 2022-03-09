@@ -1,0 +1,108 @@
+.instruction-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px 5px;
+  margin-top: 20px;
+  color: white;
+}
+
+.instruction-box img {
+  margin: 0px;
+  width: 100%;
+}
+.instruction-txt {
+  width: 80%;
+}
+.instruction-box .filter-div .locked:hover {
+  opacity: 0.9;
+}
+.instruction-box .filter-div .locked p {
+  width: 90%;
+  margin-left: 5%;
+  font-size: 40px;
+  margin-top: 30%;
+}
+.instruction-txt {
+  display: none;
+}
+.filter-div1 {
+  height: auto;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  text-align: center;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+}
+.filter-div1 img {
+  margin: 0px;
+  padding: 0px;
+  opacity: 100%;
+  padding: 0%;
+  width: 100%;
+}
+.locked1,
+.locked-2 {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+
+  opacity: 0%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.locked1:hover,
+.locked-2:hover {
+  transition: filter 2s ease-in-out;
+  opacity: 100%;
+  transition: opacity 2s ease-in-out;
+}
+.locked1 p {
+  margin-top: 35%;
+  font-size: 40px;
+  width: 90%;
+  margin-left: 5%;
+}
+@media screen and (max-width: 1280px) {
+  .library-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px 0px;
+  }
+  .instruction-txt {
+    background-color: black;
+    display: block;
+    font-size: 20px;
+    width: 96%;
+    padding-left: 2%;
+  }
+  .instruction-box .filter-div1 .locked1:hover {
+    opacity: 0;
+  }
+  .instruction-box .filter-div1 .locked1 {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .instruction-box {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px 5px;
+  }
+  .instruction-txt {
+    display: block;
+    font-size: 20px;
+    width: 98%;
+    padding-left: 2%;
+  }
+  .instruction-box .filter-div .locked:hover {
+    opacity: 0;
+  }
+  .instruction-box .filter-div .locked {
+    opacity: 0;
+  }
+}

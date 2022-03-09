@@ -1,0 +1,36 @@
+.backgroundvideo {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: -105px;
+  height: auto;
+  z-index: -999;
+  position: absolute;
+  -webkit-filter: blur(20px); /* Safari 6.0 - 9.0 */
+  filter: blur(20px);
+}
+.backgroundvideo:hover {
+  transition: 2s;
+  -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+  filter: blur(0px);
+}
+.LOADING {
+  position: absolute;
+  top: 350px;
+  z-index: -999999999;
+  width: 100%;
+}
+.LOADING img {
+  width: 30%;
+  margin-left: 35%;
+}
+@media screen and (max-width: 1080px) {
+  .LOADING {
+    top: 500px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .LOADING img {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
