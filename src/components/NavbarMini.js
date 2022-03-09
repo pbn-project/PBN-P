@@ -19,7 +19,11 @@ function NavbarMini() {
           </div>
 
           <div>
-            <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
+            <Link
+              to="/instruction"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
               Instructions
             </Link>
           </div>

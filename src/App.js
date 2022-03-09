@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./components/pages/Home";
+import Home from "./components/Home";
 import NavbarSlider from "./components/NavbarSlider";
 import Library from "./components/Library";
-import Instruction from "./components/pages/Instrustion";
-import Information from "./components/pages/Information";
+import Instruction from "./components/Instrustion";
+import Information from "./components/Information";
 import Footer from "./components/Footer";
 import ProjectPreview from "./components/SettingsProject/ProjectPreview";
-import TestForm from "./components/TestForm";
+// import TestForm from "./components/TestForm";
 
 function App() {
   return (

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Splitfilter.css";
-import VideoPreview from "./VideoPreview";
 
 function Splitfilter() {
   const [block, setBlock] = useState([{}]);
