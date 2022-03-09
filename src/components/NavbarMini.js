@@ -5,7 +5,6 @@ import "./NavbarMini.css";
 
 function NavbarMini() {
   const [setClick] = useState(false);
-  const [setButton] = useState(true);
 
   const closeMobileMenu = () => setClick(false);
 
@@ -20,11 +19,7 @@ function NavbarMini() {
           </div>
 
           <div>
-            <Link
-              to="/instruction"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
+            <Link to="/home" className="nav-links" onClick={closeMobileMenu}>
               Instructions
             </Link>
           </div>
